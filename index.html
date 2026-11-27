@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Burguer Express | Hambúrgueres Artesanais</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-950 text-stone-100 antialiased">
+  <header class="border-b border-stone-800 bg-stone-900/80 sticky top-0 z-10 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="#" class="text-xl font-bold tracking-tight text-amber-400">
+        Burguer Express
+      </a>
+      <nav class="hidden md:flex gap-6 text-sm text-stone-300">
+        <a href="#cardapio" class="hover:text-amber-400 transition">Cardápio</a>
+        <a href="#diferenciais" class="hover:text-amber-400 transition">Diferenciais</a>
+        <a href="#pedido" class="hover:text-amber-400 transition">Fazer Pedido</a>
+      </nav>
+      <a href="#pedido" class="bg-amber-500 hover:bg-amber-400 text-stone-950 font-semibold text-sm px-4 py-2 rounded-lg transition">
+        Pedir Agora
+      </a>
+    </div>
+  </header>
+
+  <section class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <span class="inline-block bg-amber-500/15 text-amber-400 text-xs font-semibold px-3 py-1 rounded-full mb-4">
+        Entrega rápida e sabor artesanal
+      </span>
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
+        O hambúrguer que chega quente e no ponto certo.
+      </h1>
+      <p class="text-stone-400 text-base md:text-lg mb-8">
+        Blend bovino selecionado, pão brioche selado na manteiga e molhos feitos na casa. Monte seu pedido em poucos cliques.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#cardapio" class="bg-amber-500 hover:bg-amber-400 text-stone-950 font-semibold px-6 py-3 rounded-lg transition">
+          Ver Cardápio
+        </a>
+        <a href="#pedido" class="border border-stone-700 hover:border-stone-500 text-stone-200 font-medium px-6 py-3 rounded-lg transition">
+          Simular Pedido
+        </a>
+      </div>
+    </div>
+
+    <div class="bg-stone-900 border border-stone-800 rounded-2xl p-6 space-y-4">
+      <div class="flex items-center justify-between border-b border-stone-800 pb-4">
+        <div>
+          <p class="text-xs uppercase tracking-wider text-amber-400 font-semibold">Destaque da Casa</p>
+          <h2 class="text-2xl font-bold">Express Duplo Bacon</h2>
+        </div>
+        <span class="text-2xl font-extrabold text-amber-400">R$ 34,90</span>
+      </div>
+      <p class="text-stone-400 text-sm">
+        Dois smash burgers de 90g, cheddar maturado, bacon crocante, cebola caramelizada e maionese defumada no pão brioche.
+      </p>
+      <ul class="text-sm text-stone-300 space-y-2">
+        <li>• Tempo médio de preparo: 18 minutos</li>
+        <li>• Opção de combo com batata rústica e refrigerante</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="cardapio" class="max-w-6xl mx-auto px-4 py-14 border-t border-stone-800">
+    <h2 class="text-3xl font-bold mb-2">Cardápio Principal</h2>
+    <p class="text-stone-400 mb-8">Escolha suas opções favoritas para montar o pedido.</p>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <article class="bg-stone-900 border border-stone-800 rounded-xl p-6 flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-bold mb-2">Classic Smash</h3>
+          <p class="text-stone-400 text-sm mb-4">
+            Hambúrguer 120g, queijo prato, picles da casa e molho especial no pão brioche.
+          </p>
+        </div>
+        <div class="flex items-center justify-between pt-4 border-t border-stone-800">
+          <span class="font-bold text-amber-400 text-lg">R$ 26,90</span>
+          <button type="button" data-item="Classic Smash (R$ 26,90)" class="selecionar-item text-xs bg-stone-800 hover:bg-amber-500 hover:text-stone-950 px-3 py-2 rounded-lg font-medium transition">
+            Selecionar
+          </button>
+        </div>
+      </article>
+
+      <article class="bg-stone-900 border border-stone-800 rounded-xl p-6 flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-bold mb-2">Express Duplo Bacon</h3>
+          <p class="text-stone-400 text-sm mb-4">
+            Dois smash burgers 90g, cheddar duplo, bacon em fatias e maionese defumada.
+          </p>
+        </div>
+        <div class="flex items-center justify-between pt-4 border-t border-stone-800">
+          <span class="font-bold text-amber-400 text-lg">R$ 34,90</span>
+          <button type="button" data-item="Express Duplo Bacon (R$ 34,90)" class="selecionar-item text-xs bg-stone-800 hover:bg-amber-500 hover:text-stone-950 px-3 py-2 rounded-lg font-medium transition">
+            Selecionar
+          </button>
+        </div>
+      </article>
+
+      <article class="bg-stone-900 border border-stone-800 rounded-xl p-6 flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-bold mb-2">Veggie Crispy</h3>
+          <p class="text-stone-400 text-sm mb-4">
+            Burger empanado de grão-de-bico e legumes, alface americana, tomate e maionese de ervas.
+          </p>
+        </div>
+        <div class="flex items-center justify-between pt-4 border-t border-stone-800">
+          <span class="font-bold text-amber-400 text-lg">R$ 28,90</span>
+          <button type="button" data-item="Veggie Crispy (R$ 28,90)" class="selecionar-item text-xs bg-stone-800 hover:bg-amber-500 hover:text-stone-950 px-3 py-2 rounded-lg font-medium transition">
+            Selecionar
+          </button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="diferenciais" class="max-w-6xl mx-auto px-4 py-14 border-t border-stone-800">
+    <h2 class="text-3xl font-bold mb-8">Por que escolher o Burguer Express?</h2>
+    <div class="grid md:grid-cols-3 gap-6 text-sm">
+      <div class="bg-stone-900/60 border border-stone-800 rounded-xl p-5">
+        <h3 class="font-semibold text-amber-400 text-base mb-1">Ingredientes Frescos</h3>
+        <p class="text-stone-400">Produção diária com foco em qualidade, padronização e sabor.</p>
+      </div>
+      <div class="bg-stone-900/60 border border-stone-800 rounded-xl p-5">
+        <h3 class="font-semibold text-amber-400 text-base mb-1">Fluxo Rápido</h3>
+        <p class="text-stone-400">Seleção direta de itens e confirmação instantânea do resumo do pedido.</p>
+      </div>
+      <div class="bg-stone-900/60 border border-stone-800 rounded-xl p-5">
+        <h3 class="font-semibold text-amber-400 text-base mb-1">Design Responsivo</h3>
+        <p class="text-stone-400">Interface adaptada para celular, tablet e desktop com Tailwind CSS.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pedido" class="max-w-3xl mx-auto px-4 py-14 border-t border-stone-800">
+    <h2 class="text-3xl font-bold mb-2">Finalizar Pedido</h2>
+    <p class="text-stone-400 mb-6">Preencha os dados abaixo para gerar o resumo do seu pedido.</p>
+
+    <form id="form-pedido" class="bg-stone-900 border border-stone-800 rounded-2xl p-6 space-y-4">
+      <div>
+        <label for="cliente" class="block text-sm font-medium mb-1">Seu Nome</label>
+        <input id="cliente" type="text" required placeholder="Ex.: Murilo Belli"
+          class="w-full rounded-lg bg-stone-950 border border-stone-700 px-4 py-2.5 text-sm focus:outline-none focus:border-amber-400" />
+      </div>
+
+      <div>
+        <label for="lanche" class="block text-sm font-medium mb-1">Item Selecionado</label>
+        <select id="lanche" class="w-full rounded-lg bg-stone-950 border border-stone-700 px-4 py-2.5 text-sm focus:outline-none focus:border-amber-400">
+          <option value="Classic Smash (R$ 26,90)">Classic Smash (R$ 26,90)</option>
+          <option value="Express Duplo Bacon (R$ 34,90)">Express Duplo Bacon (R$ 34,90)</option>
+          <option value="Veggie Crispy (R$ 28,90)">Veggie Crispy (R$ 28,90)</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="observacoes" class="block text-sm font-medium mb-1">Observações (opcional)</label>
+        <textarea id="observacoes" rows="3" placeholder="Ex.: Sem cebola, ponto da carne bem passado..."
+          class="w-full rounded-lg bg-stone-950 border border-stone-700 px-4 py-2.5 text-sm focus:outline-none focus:border-amber-400"></textarea>
+      </div>
+
+      <button type="submit" class="w-full bg-amber-500 hover:bg-amber-400 text-stone-950 font-bold py-3 rounded-lg transition">
+        Confirmar Pedido
+      </button>
+    </form>
+
+    <div id="resumo-pedido" class="hidden mt-6 bg-emerald-950/50 border border-emerald-700 rounded-xl p-5 text-sm text-emerald-200"></div>
+  </section>
+
+  <footer class="border-t border-stone-800 py-8 text-center text-xs text-stone-500">
+    Burguer Express — Projeto front-end desenvolvido com HTML5, Tailwind CSS e JavaScript.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
